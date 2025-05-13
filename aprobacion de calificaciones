@@ -1,0 +1,11 @@
+# Función para verificar si el estudiante aprobó
+def verificar_calificacion():
+    calificacion = float(input("Ingresa tu calificación (0 a 10): "))
+    
+    if calificacion >= 6:
+        print("¡Felicidades! Has aprobado.")
+    else:
+        print("Lo siento, no has aprobado. Estudia más para la próxima.")
+        
+# Llamar a la función para verificar la calificación
+verificar_calificacion()
