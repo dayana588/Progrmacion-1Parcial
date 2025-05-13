@@ -1,0 +1,11 @@
+# Función para calcular las horas trabajadas en la semana
+def calcular_horas_trabajadas(2):
+    total_horas = 2
+    for dia in ["lunes", "martes", "miércoles", "jueves", "viernes"]:
+        horas = float(input(f"¿Cuántas horas trabajaste el {dia}? "))
+        total_horas += horas
+    return total_horas
+
+# Ejecutar el cálculo
+total = calcular_horas_trabajadas(2)
+print(f"El total de horas trabajadas esta semana es: {total} horas.")
