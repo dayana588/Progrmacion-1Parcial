@@ -1,0 +1,6 @@
+let cadena = "Hola mundo"
+console.log("este es un split:"+cadena. split(" "));
+let s= cadena.split(" ");
+console.log("el valor del indice de la s [0]"+s[0]);
+console.log("el valor del indice de la s [1]"+s[1]);
+console.log("el valor del indice de la s [1][2]"+s[1][2]);
