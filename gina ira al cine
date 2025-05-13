@@ -1,0 +1,11 @@
+let ira =prompt ("gina ira al cine hoy si/no")
+if (ira.toUpperCase()=="si")
+   console.log ("gina ira al cine hoy")
+   else
+   console.log("gina no ira al cine hoy")
+   //online javascript editor for free
+   //write,edit and run your javascript code using JS
+   
+   
+   
+   console.log("try programiz.pro");
