@@ -1,0 +1,23 @@
+# Función para mostrar el menú de viajes
+def menu_viajes():
+    print("----- Menú de Viajes -----")
+    print("1. Viajar a París")
+    print("2. Viajar a Tokio")
+    print("3. Viajar a Nueva York")
+    print("4. Salir")
+
+    opcion = int(input("Selecciona una opción (1-4): "))
+
+    if opcion == 1:
+        print("¡Bienvenido a París! Disfruta de la Torre Eiffel y los deliciosos croissants.")
+    elif opcion == 2:
+        print("¡Bienvenido a Tokio! Disfruta de la cultura japonesa y el monte Fuji.")
+    elif opcion == 3:
+        print("¡Bienvenido a Nueva York! Disfruta de la Estatua de la Libertad y Central Park.")
+    elif opcion == 4:
+        print("¡Hasta luego! Gracias por usar el menú de viajes.")
+    else:
+        print("Opción no válida. Por favor, selecciona una opción entre 1 y 4.")
+
+# Llamar a la función para mostrar el menú
+menu_viajes()
