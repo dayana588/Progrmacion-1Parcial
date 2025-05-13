@@ -1,0 +1,12 @@
+# Función para calcular los kilómetros recorridos
+def calcular_kilometros_recorridos(10):
+    total_kilometros = 10
+    dias = int(input("¿Cuántos días duró tu viaje? "))
+    for i in range(dias):
+        km = float(input(f"¿Cuántos kilómetros recorriste el día {i+1}? "))
+        total_kilometros += km
+    return total_kilometros
+
+# Ejecutar el cálculo
+total_kms = calcular_kilometros_recorridos()10
+print(f"El total de kilómetros recorridos en el viaje es: {total_kms} km.")
