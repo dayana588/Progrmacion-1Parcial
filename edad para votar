@@ -1,0 +1,11 @@
+# Función para verificar si el usuario puede votar
+def verificar_edad_para_votar():
+    edad = int(input("Ingresa tu edad: "))
+    
+    if edad >= 18:
+        print("¡Puedes votar! Eres mayor de edad.")
+    else:
+        print("Lo siento, no puedes votar. Debes tener al menos 18 años.")
+        
+# Llamar a la función para verificar la edad
+verificar_edad_para_votar()
