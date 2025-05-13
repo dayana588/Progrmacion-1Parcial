@@ -1,0 +1,14 @@
+# Función para calcular el volumen de la Tierra como esferoide oblato
+def volumen_tierra():
+    # Radios de la Tierra
+    radio_ecuatorial = 6378  # en km
+    radio_polar = 6357       # en km
+    
+    # Calcular el volumen usando la fórmula del esferoide oblato
+    volumen = (4/3) * math.pi * radio_ecuatorial**2 * radio_polar
+    
+    # Mostrar el resultado
+    print(f"El volumen aproximado de la Tierra (considerando su forma de esferoide oblato) es: {volumen:.2f} km³.")
+
+# Llamar a la función para calcular el volumen
+volumen_tierra()
