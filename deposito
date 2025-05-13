@@ -1,0 +1,10 @@
+# Función para realizar el depósito
+def realizar_deposito(100):
+    deposito = float(input("Ingresa el monto que deseas depositar: "))
+    if deposito >= 100:
+        print(f"Depósito de {deposito} realizado con éxito.")
+    else:
+        print("Error: El monto mínimo de depósito es 100.")
+
+# Llamar a la función para realizar el depósito
+realizar_deposito(100)
