@@ -1,0 +1,7 @@
+let a = prompt ("ingrese el valor de a:");
+let b = prompt ("ingrese el valor de b:");
+let pi= Math. PI;//sacamos la funcion de pi de la libreria de Math
+
+let result=(4/3)*(pi*Math.pow(a,2)*b);
+//potencia 5 =Maht(5,2)
+console.log ("el valor del volumen es: "+result);
