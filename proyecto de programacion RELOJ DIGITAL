@@ -1,0 +1,30 @@
+import tkinter as tk
+import time
+
+# Función para actualizar la hora en la interfaz
+def actualizar_reloj():
+    # Obtener la hora actual del sistema
+    hora_actual = time.strftime("%H:%M:%S")  # Formato 24 horas (HH:MM:SS)
+    
+    # Actualizar la etiqueta con la hora actual
+    etiqueta.config(text=hora_actual)
+    
+    # Llamar a esta función nuevamente después de 1000 milisegundos (1 segundo)
+    ventana.after(1000, actualizar_reloj)
+
+# Crear la ventana principal
+ventana = tk.Tk()
+ventana.title("Reloj Digital")
+
+# Configurar el tamaño de la ventana
+ventana.geometry("300x150")
+
+# Configurar la fuente y el tamaño de la etiqueta
+etiqueta = tk.Label(ventana, font=("Arial", 48), fg="black")
+etiqueta.pack(expand=True)
+
+# Llamar a la función para actualizar el reloj
+actualizar_reloj()
+
+# Ejecutar la ventana
+ventana.mainloop()
