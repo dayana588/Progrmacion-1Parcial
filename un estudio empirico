@@ -1,0 +1,25 @@
+# Función para realizar un estudio empírico sobre las temperaturas
+def estudio_empirico():
+    temperaturas = []
+    
+    # Ingresar las temperaturas de los 7 días de la semana
+    for i in range(7):
+        temp = float(input(f"Ingrese la temperatura del día {i+1}: "))
+        temperaturas.append(temp)
+    
+    # Calcular el promedio de las temperaturas
+    promedio = sum(temperaturas) / len(temperaturas)
+    
+    # Mostrar el resultado
+    print(f"\nEl promedio de las temperaturas de la semana es: {promedio:.2f} °C.")
+    
+    # Mostrar la interpretación de los resultados
+    if promedio > 30:
+        print("¡Hace calor esta semana!")
+    elif promedio > 20:
+        print("La semana ha tenido una temperatura agradable.")
+    else:
+        print("Hace frío esta semana.")
+
+# Llamar a la función para hacer el estudio empírico
+estudio_empirico()
