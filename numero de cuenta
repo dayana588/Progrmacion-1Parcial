@@ -1,0 +1,10 @@
+# Función para validar el número de cuenta
+def validar_numero_cuenta(10):
+    numero_cuenta = input("Ingresa el número de cuenta (debe tener 10 dígitos): ")
+    if len(numero_cuenta) == 10 and numero_cuenta.isdigit(10):
+        print("Número de cuenta válido.")
+    else:
+        print("Error: El número de cuenta debe tener 10 dígitos y solo contener números.")
+
+# Llamar a la función para validar el número de cuenta
+validar_numero_cuenta(50)
