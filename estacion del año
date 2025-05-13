@@ -1,0 +1,17 @@
+# Función para determinar la estación del año
+def estacion_del_ano():
+    mes = input("Ingresa un mes del año (con la primera letra en mayúscula): ").lower()
+
+    if mes in ['marzo', 'abril', 'mayo']:
+        print("Estás en Primavera.")
+    elif mes in ['junio', 'julio', 'agosto']:
+        print("Estás en Verano.")
+    elif mes in ['septiembre', 'octubre', 'noviembre']:
+        print("Estás en Otoño.")
+    elif mes in ['diciembre', 'enero', 'febrero']:
+        print("Estás en Invierno.")
+    else:
+        print("Mes no válido. Por favor, ingresa un mes válido.")
+
+# Llamar a la función para determinar la estación
+estacion_del_ano()
