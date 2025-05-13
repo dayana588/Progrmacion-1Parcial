@@ -1,0 +1,36 @@
+# Función para calcular el costo de alquiler de automóviles
+def alquiler_automovil():
+    # Mostrar opciones de automóviles
+    print("Tipos de automóviles disponibles para alquilar:")
+    print("1. Sedán ($50 por día)")
+    print("2. SUV ($80 por día)")
+    print("3. Deportivo ($100 por día)")
+    
+    # Ingresar el tipo de automóvil
+    tipo = int(input("Selecciona el tipo de automóvil (1-3): "))
+    
+    # Ingresar la cantidad de días del alquiler
+    dias = int(input("¿Cuántos días deseas alquilar el automóvil? "))
+    
+    # Calcular el precio según el tipo de automóvil
+    if tipo == 1:
+        precio_dia = 50
+        tipo_auto = "Sedán"
+    elif tipo == 2:
+        precio_dia = 80
+        tipo_auto = "SUV"
+    elif tipo == 3:
+        precio_dia = 100
+        tipo_auto = "Deportivo"
+    else:
+        print("Opción no válida.")
+        return
+    
+    # Calcular el costo total
+    costo_total = precio_dia * dias
+    
+    # Mostrar el resultado
+    print(f"\nEl costo total del alquiler de un {tipo_auto} por {dias} días es: ${costo_total}.")
+
+# Llamar a la función para calcular el alquiler
+alquiler_automovil()
