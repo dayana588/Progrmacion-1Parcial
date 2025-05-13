@@ -1,0 +1,26 @@
+# Función para restar dos matrices de 2x2
+def resta_matrices():
+    # Ingresar los elementos de las dos matrices
+    print("Ingresa los elementos de la primera matriz (2x2):")
+    matriz1 = [[float(input(f"Elemento [1,1]: ")), float(input(f"Elemento [1,2]: "))],
+               [float(input(f"Elemento [2,1]: ")), float(input(f"Elemento [2,2]: "))]]
+    
+    print("Ingresa los elementos de la segunda matriz (2x2):")
+    matriz2 = [[float(input(f"Elemento [1,1]: ")), float(input(f"Elemento [1,2]: "))],
+               [float(input(f"Elemento [2,1]: ")), float(input(f"Elemento [2,2]: "))]]
+    
+    # Inicializar la matriz de resultado
+    matriz_resultado = [[0, 0], [0, 0]]
+    
+    # Realizar la resta de las matrices
+    for i in range(2):
+        for j in range(2):
+            matriz_resultado[i][j] = matriz1[i][j] - matriz2[i][j]
+    
+    # Mostrar el resultado
+    print("\nLa matriz resultante de la resta es:")
+    for fila in matriz_resultado:
+        print(fila)
+
+# Llamar a la función para restar las matrices
+resta_matrices()
